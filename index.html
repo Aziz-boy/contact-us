@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <span class="nav-link theme-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="section-wrapper">
+        <section class="contact">
+            <div class="container">
+                <div class="left">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1>Get in touch<span>.</span></h1>
+                            <p class="text">Or reach us via : <a href="mailto:shavgoniaziz@gmail.com">shavgoniaziz@gmail.com</a></p>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <div class="input-wrap">
+                                <input class="contact-input" id="firstName" type="text" required>
+                                <label for="firstName">First Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="contact-input" id="lastName" type="text" required>
+                                <label for="lastName">Last Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="input-wrap w-100">
+                                <input class="contact-input" id="email" type="email" required>
+                                <label for="email">Email</label>
+                                <i class="icon fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="input-wrap textarea w-100">
+                                <textarea id="message" class="contact-input" required></textarea>
+                                <label for="message">Message</label>
+                                <i class="icon fa-solid fa-inbox"></i>
+                            </div>
+                            <div class="contact-buttons">
+                                <button class="btn upload">
+                                    <span>
+                                        <i class="fa-solid fa-paperclip"></i> Add attachment
+                                    </span>
+                                    <input type="file" id="file">
+                                </button>
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </form>
+                        <div id="success-message" class="success-message">Message Sent! ✅</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
